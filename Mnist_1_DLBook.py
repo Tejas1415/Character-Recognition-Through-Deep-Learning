@@ -4,12 +4,12 @@ Created on Sat Jun  9 17:53:20 2018
 
 @author: Tejas_K_Reddy
 
-First and Basic Deep Learning, Character Recognition From mnist database.
+Simple Deep Learning, Character Recognition From mnist database.
 """
 
 
 ## Load the data into respective variables
-from keras.datasets import mnist
+from keras.datasets import mnist                 # This would take some time to download the Mnist database to your computer (Only for the first time)
 (train_images, train_labels), (test_images, test_labels)= mnist.load_data()
 
 train_images.shape
@@ -67,6 +67,3 @@ s
 batch1= train_images[:128]
 batch2 = train_images[128:256] #256 not included
 batchn = train_images[128*n:128*(n+1)]
-
-
-
